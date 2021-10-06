@@ -259,7 +259,7 @@ app.process_tickets(blackHoleOrdering)
 
 
 ################################################################################
-## Another code example
+## Another code example with Strategy Design Pattern
 ## Source: https://www.geeksforgeeks.org/strategy-method-python-design-patterns/
 ################################################################################
 
