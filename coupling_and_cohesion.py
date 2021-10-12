@@ -106,7 +106,7 @@ import random
 
 
 ## here all thata is stored ore logically and methods do specific things regarding their
-## data objects, for ex. VehicleInfo is now in charge od caluclating taxes
+## data objects, for ex. VehicleInfo is now in charge of caluclating taxes
 ## each method only has one responsability
 ## function are closed to the data that they compute
 ## coupling here is pretty low
