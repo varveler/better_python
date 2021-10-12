@@ -1,8 +1,13 @@
 # **SOLID** Design Principles
 
-These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows. Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.  
+These principles establish practices that aim for better software development with considerations for maintaining and extending as the project grows. Adopting these practices can also contribute to avoiding code smells or code refactoring.
 
-> Was published in year 2000 by Robert C. Martin AKA "Uncle Bob"
+The SOLID concept was first published in year 2000 by Robert C. Martin AKA "Uncle Bob".
+
+> Main concepts  and definitions from this video: https://youtu.be/pTB30aXS77U  
+> Most of code here used is from this repo: https://github.com/ArjanCodes/betterpython  
+> Among other sources credited at the bottom.  
+
 
 **SOLID** is an acronym for 5 design principles:
 
@@ -872,8 +877,8 @@ class Authorizer_Google(Authorizer):
 ```
 
 sources:  
-https://www.linkedin.com/pulse/solid-design-principles-python-examples-hiral-amodia/
-https://github.com/ArjanCodes/betterpython/tree/main/9%20-%20solid
-https://www.youtube.com/watch?v=pTB30aXS77U
-https://softwarecrafters.io/python/principios-solid-python
-https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+https://www.youtube.com/watch?v=pTB30aXS77U  
+https://github.com/ArjanCodes/betterpython/tree/main/9%20-%20solid  
+https://www.linkedin.com/pulse/solid-design-principles-python-examples-hiral-amodia/  
+https://softwarecrafters.io/python/principios-solid-python  
+https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design  
