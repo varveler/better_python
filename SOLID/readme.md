@@ -187,13 +187,12 @@ This means that a class or a function should be extendable without modifying the
 
 This principle recommends that when creating new functionality into our code instead of modifying the original classes we should extend the already existing ones or redefine the methods from the parent class also is valid to pass dependencies that implement the wanted new function.
 
-These ensures code stability avoiding continuous changes to the code, which makes dependency chains more reliable. The principle is useful when working with a framework or legacy code.
+These ensures code stability avoiding continuous changes to the code, which makes dependency chains more reliable. The principle is useful when working with a framework or legacy code. Like extending the AbstractUser class in Django to create a custom user.
 
-For example extending the AbstractUser class in Django to create a custom user.
-
-for example in the following code:
+For example in the following code:
 
 ```python
+# code before
 class Order:
     def __init__(self):
         self.items = []
@@ -237,7 +236,7 @@ The problem with this code is if we wanted to add a new payment method like payp
 
 For applying the Open/Close principle we can create a structure of classes so we can define a new subclass for every payment type.
 
-Like so:
+Like the following code:
 
 ```python
 # Code after
@@ -306,7 +305,7 @@ class PaypalPaymentProcessor(PaymentProcessor):
 
 If you have objects in a program you should be able to substitute those objects with instances of their subtypes or subclasses without altering the correctness of the program.
 
-for example with the previous code:
+for example with the next code:
 
 ```python
 # code before
@@ -343,7 +342,7 @@ processor = PaypalPaymentProcessor()
 processor.pay(order, "jhon_perez@gmail.com")
 ```
 
-but in this example we are using  security_code to pass email.
+but in this previous example we are using  security_code to pass email.
 
 
 To solve this we should remove the method parameter and move it to the initializers so we can do different things depending on the class we create.
@@ -430,7 +429,7 @@ find_red_cars(cars)
 A better way to implement this would be to introduce setter and getter methods in the Superclass Car using which we can set and get Car’s properties without leaving that implementation to individual developers.
 """
 
-like this:
+like the following code:
 ```python
 # code after
 class Car():
